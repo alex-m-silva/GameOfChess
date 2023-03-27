@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using tabuleiro;
 using xadrez;
@@ -9,15 +10,25 @@ namespace xadrez_console
     {
         public static void imprimirPartida(PartidaDeXadrez partida)
         {
-            Tela.imprimirTabuleiro(partida.tab);
+            imprimirTabuleiro(partida.tab);
             Console.WriteLine();
+
+
             imprimirPecasCapturadas(partida);
             Console.WriteLine();
             Console.WriteLine("\nTurno: " + partida.turno);
-            Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
-            if (partida.xeque)
+            if (!partida.terminada)
             {
-                Console.WriteLine("Você esta em xeque!");
+                Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                if (partida.xeque)
+                {
+                    Console.WriteLine("Você esta em xeque!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("XequeMate");
+                Console.WriteLine($"Vencedor: {partida.jogadorAtual}");
             }
         }
 
