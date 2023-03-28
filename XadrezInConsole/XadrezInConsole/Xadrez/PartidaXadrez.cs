@@ -342,14 +342,14 @@ namespace xadrez
             colocarNovaPeca('b', 1, new Cavalo(tab, Cor.Branca));
 
             colocarNovaPeca('f', 1, new Bispo(tab, Cor.Branca));
-           // colocarNovaPeca('c', 1, new Bispo(tab, Cor.Branca));
+            colocarNovaPeca('c', 1, new Bispo(tab, Cor.Branca));
 
             colocarNovaPeca('e', 1, new Rei(tab, Cor.Branca, this));
             colocarNovaPeca('d', 1, new Dama(tab, Cor.Branca));
 
             colocarNovaPeca('a', 2, new Peao(tab, Cor.Branca, this));
             colocarNovaPeca('b', 2, new Peao(tab, Cor.Branca, this));
-            colocarNovaPeca('c', 7, new Peao(tab, Cor.Branca, this));
+            colocarNovaPeca('c', 2, new Peao(tab, Cor.Branca, this));
             colocarNovaPeca('d', 2, new Peao(tab, Cor.Branca, this));
             colocarNovaPeca('e', 2, new Peao(tab, Cor.Branca, this));
             colocarNovaPeca('f', 2, new Peao(tab, Cor.Branca, this));
@@ -363,14 +363,14 @@ namespace xadrez
             colocarNovaPeca('b', 8, new Cavalo(tab, Cor.Preta));
 
             colocarNovaPeca('f', 8, new Bispo(tab, Cor.Preta));
-           // colocarNovaPeca('c', 8, new Bispo(tab, Cor.Preta));
+            colocarNovaPeca('c', 8, new Bispo(tab, Cor.Preta));
 
             colocarNovaPeca('e', 8, new Rei(tab, Cor.Preta, this));
             colocarNovaPeca('d', 8, new Dama(tab, Cor.Preta));
 
-            colocarNovaPeca('c', 2, new Peao(tab, Cor.Preta, this));
+            colocarNovaPeca('c', 7, new Peao(tab, Cor.Preta, this));
             colocarNovaPeca('b', 7, new Peao(tab, Cor.Preta, this));
-          //  colocarNovaPeca('c', 7, new Peao(tab, Cor.Preta, this));
+            colocarNovaPeca('c', 7, new Peao(tab, Cor.Preta, this));
             colocarNovaPeca('d', 7, new Peao(tab, Cor.Preta, this));
             colocarNovaPeca('e', 7, new Peao(tab, Cor.Preta, this));
             colocarNovaPeca('f', 7, new Peao(tab, Cor.Preta, this));
